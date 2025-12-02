@@ -1,14 +1,14 @@
 <?php
 // Define el host o servidor de la base de datos (usualmente 'localhost')
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'nozomi.proxy.rlwy.net');
 
-define('DB_PORT', '3306');
+define('DB_PORT', '33618');
 
 // Define el nombre de usuario para la base de datos (usualmente 'root' en local)
 define('DB_USER', 'root');
 
 // Define la contraseña para ese usuario de la base de datos
-define('DB_PASS', 'Jiqui50800%');
+define('DB_PASS', 'FmxWjOzAYOrttNiHxRnwUddWFGhgstHF');
 
 // Define el nombre de la base de datos a la que te quieres conectar
 define('DB_NAME', 'villabank');
