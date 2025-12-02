@@ -1,0 +1,18 @@
+# Activa el motor de reescritura de URLs
+RewriteEngine On
+
+# Establece el directorio base para las reglas (útil si estás en /pagina/)
+RewriteBase /pagina/
+
+# Condición: Si la solicitud es un archivo que existe (ej: style.css, imagen.jpg)
+RewriteCond %{REQUEST_FILENAME} -f
+# Regla: No reescribir la URL y detener el procesamiento
+RewriteRule ^ - [L]
+
+# Condición: Si la solicitud es un directorio que existe
+RewriteCond %{REQUEST_FILENAME} -d
+# Regla: No reescribir la URL y detener el procesamiento
+RewriteRule ^ - [L]
+
+# Regla: Captura cualquier otra URL y la envía a index.php
+RewriteRule ^(.*)$ index.php [L]
